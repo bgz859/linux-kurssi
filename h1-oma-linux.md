@@ -71,7 +71,44 @@ Tämän jälkeen ollaan valmiita Debianin asennusikkunan kanssa ja voidaan paina
 
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/1b75da04-90ec-46d4-be66-64eaaf4749a8)
 
+Kun asennus on valmis, Debian pyytää käynnistämään tietokoneen uudelleen. Checkkasin "restart now" ja painoin "Done" ja tietokone käynnistyi uudelleen.
 
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/69e1f5e4-752e-4b60-8836-41eaf5ee304d)
+
+Kun kone on bootannut uudelleen aukeaa "log in" ikkuna johon syötin käyttäjänimen ja salasanan.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/2a38a3bc-7cbb-4c1a-a389-b660fdc56d35)
+
+Tässä vaiheessa on hyvä taas tarkistaa, toimiiko internetyhteys.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/3e5de6ef-ca83-41cb-8c87-ee871802e1e6)
+
+Kaikki toimii ja Debianin asennus onnistui ongelmitta. Hyvä minä!
+
+## Final steps
+
+Lopuksi ohjeessa pyydetään tarkistamaan päivitykset Debianin terminal emulatorin avulla. Avasin Terminal emulatorin ja syötin komennon "sudo apt-get update". Sain vastaukseksi "[sudo] password for stefanb". (Tämä johtuu m siitä, että komennon alussa oleva "sudo" tarkoittaa "use superuser privlidges" eli möyntää käyttäjälle selkokielellä kaikki oikeudet.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/e131458b-d381-48da-bb44-9b80829bd2c5)
+
+Kun päivitykset on ladattu, syötetään uusi komento terminal emulaattoriin; "sudo apt-get -y dist-upgrade". Ohjeessa lukee, että -y tarkoittaa "yes" jolla ilmeisesti tuetaan komentoa "dist-upgrade" joka taas tarkoittaa upgrade everything.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/df27a669-374e-4a9d-9b18-f639801a7854)
+
+Tämän jälkeen silmääni pisti komentorivin 3. viimeistä kohtaa.
+I: The initramfs will attempt to resume from /dev/sda2
+I: (UUID=a433e3bc-4d42-49e6-b5e0-3dc998249779)
+I: Set the RESUME variable to override this.
+
+Googlaamalla selvisi, että tämä voi johtua siitä, että käyttöjärjestelmä on asennettu toisen käyttöjärjestelmän sisälle. En alkanut korjaamaan ongelmaa, sillä oletettavasti kaikilla muillakin herjaa samaa asiaa. Tämä varmasti selviää seuraavalla oppitunnilla.
+
+Viimeisenä syötin terminal emulaattoriin "sudo apt-get -y install ufw" joka asentaa firewallin tietokoneelle.
+
+Kun asennus oli valmis syötin vielä "sudo ufw enable" joka laittaa firewallin päälle.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/67d7bd19-cc93-4806-9384-ead338a3ec49)
+
+Ja näin kaikki on valmista.
 
 
 
