@@ -127,8 +127,14 @@ Kävin aika monta .log tiedostoa auki, kunnes löysin jonkin joka oli oikeasti l
 
 
 ## Lähteet
-
+24 Useful Terminal Emulators for Linux Desktop in 2023, Ravi Saive.
 https://www.tecmint.com/linux-terminal-emulators/
+
+Piping in Unix or Linux, rishabh1322.
 https://www.geeksforgeeks.org/piping-in-unix-or-linux/
+
+Command Line Basics Revisited, Tero Karvinen.
 https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
+
+grep command In Linux / UNIX with practical examples, Vivek Gite.
 https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
