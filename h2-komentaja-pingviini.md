@@ -113,10 +113,17 @@ Googlammalla selvisi, että putkella meinataan merkkiä, jonka avulla voidaan "p
 
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/d1533f23-56c0-4ebf-a75a-a14f4395cf27)
 
-## G)
+## G) Tukki
 
+Kaksi tapahtumaa lokiin, yksi hyvä yksi paha. Näitä tehtäviä tehdessä jos olisi samantien avannut lokin olisi varmaan saanut 100 virheilmoitusta lokiin samantien. Toivottavasti lokiin tallentuu aikaisemmat tapahtumat, niin saan sieltä virhekoodeja loppuelämäksi.
 
+Ensinmäinen toimenpide taisi olla kielletty, laitoin "cd /var/log" ja sen jälkeen "ls" ja pääsin logeihin. Sieltä kokeilin avata aluksi kansiota, joka ei suostunut aukeamaan. Koska käytin less komentoa. Yritin sen jälkeen toista tiedostoa. kirjoitin "less /var/log/boot.log" johon tuli vastaukseksi:"/var/log/boot.log: Permission denied." Yritin tunkea läpi käyttämällä sudo komentoa aluksi. Lopputulos oli se, että kyseessä oli "binary file" joten avaaminen on turhaa jos logeja etsii. 
 
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/8e529561-29f9-4d1f-8cec-a00baf324241)
+
+Kävin aika monta .log tiedostoa auki, kunnes löysin jonkin joka oli oikeasti logi. Avasin "vboxadd-install.log" tiedoston, joka tarvitsi taas oikeuksia, niin loppukomennoksi tuli "sudo less /var/log/vboxadd-install.log ja sain auki ilmeisesti jonkin asennus login. Tämä lasketaan sitten varmaan onnistuneeksi logiksi, kun debian tässä pyörii päällä.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/a341e714-4317-41aa-8410-40d2a692ba7a)
 
 
 ## Lähteet
