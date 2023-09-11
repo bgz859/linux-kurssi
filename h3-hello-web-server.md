@@ -70,7 +70,7 @@ Seuraavaksi syötetään komento "micro index.html" jonka avulla luomme ja samal
 
 Jotta sivustolle saadaan sisältöä, lainaamme terolta "Short HTML5 page" pohjaa "https://terokarvinen.com/2012/short-html5-page/".
 
-![image](https://github.com/bgz859/linux-kurssi/assets/143337738/9fadaf20-2e1c-4bb5-9862-e07d21a6ace3)
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/5bc375df-6027-485e-9475-5cda20fbf345)
 
 Kun sivu on valmis, tallennamme "ctrl + s" ja voimme tarkistaa toimiiko sivustomme syöttämällä terminaaliin 
 "$ firefox "http://localhost/~stefanb"
@@ -81,5 +81,29 @@ Ja näin olemme onnistuneesti luoneet oman toimivan hienon kotisivuston.
 
 Lopuksi tuli vielä tarkistaa, onko weppisivu validi käyttämällä "http://vlaidator.w3.org" sivustoa. 
 
-## f) curl-l ja curl komennot
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/674691df-2de6-493c-8788-a3df29555eef)
+
+Kaikki ok.
+
+## f) curl-I ja curl komennot
+
+Kuten aikaisemmin, ei näistäkään komennoista ole minulle kumpikaan ennestään tuttuja, joten aloitin syöttämällä terminaaliin "curl-I" komennon ja katsomalla, mitä käy.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/93e097db-f09f-4bb4-8dba-594c79eeb2c1)
+
+Harmi. Googlaamalla ja kaverin naurun jälkeen tajusin, että pelkkä curl komento ei riitä. Curlin avulla voidaan tuoda dataa "from the server to client" ja toisinpäin. lisäsin curl komennon loppuun localhost/~stefanb eli "curl "http://localhost/~stefanb" ja alkoi tapahtua.
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/0ae7cd02-5e23-4684-a3d8-8960357faea9)
+
+Seuraavaksi kokeilin komentoa curl -l "http://localhost/~stefanb" ja katsoin mitä käy. No komentoa ei ole edes olemassa, tajusin, että kyseessä on iso i eikä L. Heh. Syötin siis "curl -I "http://localhost/~stefanb""
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/97d4c036-d377-411b-9765-855762cb1397)
+
+curl -I komento tulostaa HTTP pyynnön, päivämäärän, serverin, sivuston ja tyypin.
+
+## Lähteet
+
+Install Apache Web Server on Ubuntu, Tero Karvinen. https://terokarvinen.com/2008/05/02/install-apache-web-server-on-ubuntu-4/ Luettu 11.9.2023
+
+Access and Error Logs, Solarwinds. https://www.loggly.com/ultimate-guide/access-and-error-logs/ Luettu 11.9.2023
 
