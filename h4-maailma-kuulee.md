@@ -60,7 +60,7 @@ Yritin ohjeissa mainittuja komentoja:
 
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/6c982e6c-ad28-4ff9-9306-2b7738c90601)
 
-##Lähteet: 
+## Lähteet: 
 
 Linux palvelimet 2023 alkusyksy, (Tero Karvinen, 2023). Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkusyksy/
 
