@@ -2,12 +2,31 @@
 
 ## x) Lue ja tiivistä
 
+## Python Web- Idea to Production - 2023
+* Oppia eri käyttöjärjestelmiä ja selaimia
+* Osata hakea tietoa
+* Osata jakaa oikeuksia käyttäjille
+* Osata asettaa automaattiset päivitykset
+  
 ## Django 4 Instant Customer Database Tutorial
 * Djangon asentaminen
 * Database pohjainen sovellus jolla saat sivustollesi databasen
-* Käyttäjien lisääminen 
+* Asennus tapahtuu komennolla "$ sudo apt-get -y install virtualenv", sitten "$ virtualenv --system-site-packages -p python3 env/
+* Aina kun käytetään djangoa, täytyy muistaa aloittaa laittamalla "$ source env/bin/activate"
+* "$ which pip" ÄLÄ KÄYTÄ PIP JA SUDOA SAMAAN AIKAAN!
+* Uusi projekti komennolla "$ django-admin startproject xxx"
+* Admin käyttäjä komennolla "$ ./manage.py createsuperuser"
 
-
+## Deploy Django 4 - Production Install
+* Apachen ja Djangon asentaminen ja niiden yhdistäminen
+* Lataa apache2, configuroi.
+* Lataa django, configuroi.
+* Python yhdistetään apacheen käyttämällä mod_wsgi
+* VirtualHost config tiedoston avulla yhdistäminen mahdollista.
+* TDIR: /home/käyttäjä/publicwsgi/serverinimi
+* TWSGI: /home/käyttäjä/publicwsgi/servernimi/servernimi/wsgi.py
+* TVENV: /home/käyttäjä/publicwsgi/env/lib/pythonversio/site-packages
+* Apache WSGI module, jotta Apache tietää mitä WSGI komennot tarkoittavat: "$ sudo apt-get -y install libapache2-mod-wsgi-py3"
 
 
 ## a) Asenna Django
