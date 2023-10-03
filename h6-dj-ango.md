@@ -143,7 +143,7 @@ Kirjoitin kaiken käsin, niin en ihmettele jos tämän takia ei homma toimi.. ai
 
 Seuraavaksi asennetaan Apache WSGI moduuli, jotta Apache ymmärtää mitä WSGI komennot tarkoittavat.
 
-Eipä asennetakkaan, saan "AH00543: apache2: bad user name stefan" errorin. Tätä selvitellään seuraavaksi. No onneksi kuten yllämainitsin, käsinkirjoituksesta aiheutui harmia. TUSER kohtaan olin laittanut "stefan" vaikka piti laittaa "stefanb". Tämän tehtyä ajoin "$ /sbin/apache2ctl configtest" uudelleen ja sain seuraavan errorin.
+Eipä asennetakkaan, saan "AH00543: apache2: bad user name stefan" errorin. Tätä selvitellään seuraavaksi. No onneksi kuten yllämainitsin, käsinkirjoituksesta aiheutui harmia. TUSER kohtaan olin laittanut "stefan" vaikka piti laittaa "stefanb". Tämän tehtyä ajoin "$ /sbin/apache2ctl configtest" uudelleen ja sain seuraavan errorin. 
 
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/31260197-e169-4a1a-b0d8-8ed15eb89aaf)
 
