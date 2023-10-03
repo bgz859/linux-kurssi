@@ -2,6 +2,10 @@
 
 ## x) Lue ja tiivistä
 
+## Django 4 Instant Customer Database Tutorial
+* Djangon asentaminen
+* Database pohjainen sovellus jolla saat sivustollesi databasen
+* Käyttäjien lisääminen 
 
 
 
@@ -166,3 +170,9 @@ Viimeisenä teen debug osiota, ohjeiden mukaan.. "import os STATIC_ROOT = os.pat
 Collect static ei vaan jostain syystä toimi. Tähän luovutan.. Taitaa olla viimeinen kohta tehtävästä muutenkin. Luultavimmin settings.py tiedostossa jokin väärin ja siitä johtuen ei toimi. Palaan tähän ensitunnilla. Kiitos
 
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/ec316e68-0bdb-4e1d-a58a-e8e02445de8d)
+
+Tyhmä minä, piti laittaa "source env/bin/activate" ja sitten komento, kokeilin aikaisemmin, muttei jostain syystä lähtenyt toimimaan. Nyt lähti mutta poistin "STATIC_URL" kohdan settings.py tiedostosta.. Palautan sen ja kokeilen uudelleen, varmaan toimii sitten..
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/02e216fd-f6b6-49f1-96ca-07a7691aa891)
+
+boom toimi kaikki hyvin jee
