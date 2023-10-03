@@ -132,7 +132,7 @@ Ohjeiden mukaisesti kaikki ok toistaiseksi, Django asennettu.
 
 Tämän projektin nimeksi tulee "stefan" koska edellinen taisi olla stefanba". Nyt tulee varmasti isoin kohta, eli "Connect Python to Apache using mod_wsgi" Tässä tärkeintä on tietää 3. tiedostopolkua. Laitan ne tähän ylös.
 /home/stefanb/publicwsgi/stefan/ (TDIR)
-/home/tero/publicwsgi/stefan/stefan/wsgi.py/ (TWSGI)
+/home/stefanb/publicwsgi/stefan/stefan/wsgi.py/ (TWSGI)
 /home/stefanb/publicwsgi/env/lib/python3.11/site-packages/ (TVENV)
 
 Nyt hieman muokataan virtualhost tiedostoa.
@@ -148,3 +148,21 @@ Eipä asennetakkaan, saan "AH00543: apache2: bad user name stefan" errorin. Tät
 ![image](https://github.com/bgz859/linux-kurssi/assets/143337738/31260197-e169-4a1a-b0d8-8ed15eb89aaf)
 
 Tämä errori johtui siitä, että TVENV kohdassa ohjeessa on "python 3.9" jonka kopioin siitä suoraan, vaikka piti laittaa oma versioni, eli 3.11.
+
+Saan erroria AH00526 Syntax Error;
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/bc013d6b-9402-4fc0-9fc5-63c5439cd9b7)
+
+Tein muutaman muutoksen, sillä esim static oli eri paikassa kuin muut tiedostot. Tämä ei vaikuttanut, mutta auttaa loppuun tekemisessä. Tällä hetkellä olen käynyt vain koodipätkää läpi ja etsinyt virheitä ja kokeillut kansiot läpi että kaikki toimii. Toistaiseksi tuloksetta.
+
+No ihme ja kumma, kokeilin huvikseen avata virtuaalikoneen selaimella Tero Karvisen sivuston ja kopioida koko koodipätkän ja liittää sen tiedostoon ja muuttaa tarvittavat tiedot ja yllätys yllätys sehän toimi..
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/22ae35ff-596a-44bc-9372-27cb93bd8009)
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/df5838fa-701f-481c-93bf-2bf4bb79366f)
+
+Viimeisenä teen debug osiota, ohjeiden mukaan.. "import os STATIC_ROOT = os.path.join(BASE_DIR, 'static/') antaa "no such file or directory". Varmaan väärästä paikasta haen mutta saa nähdä.
+
+Collect static ei vaan jostain syystä toimi. Tähän luovutan.. Taitaa olla viimeinen kohta tehtävästä muutenkin. Luultavimmin settings.py tiedostossa jokin väärin ja siitä johtuen ei toimi. Palaan tähän ensitunnilla. Kiitos
+
+![image](https://github.com/bgz859/linux-kurssi/assets/143337738/ec316e68-0bdb-4e1d-a58a-e8e02445de8d)
